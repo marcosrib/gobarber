@@ -6,7 +6,7 @@
   - [Bibliotecas utilizadas:](#file_folder-bibliotecas-utilizadas)
 -  [Banco de dados:](#floppy_disk-banco-de-dados)
 
-##:memo:   Descriçao do projeto:
+## :memo:   Descriçao do projeto:
 
 Este é um projeto desenvolvido no bootcamp GoStack da Rockseat utilizando Node.js.
 
