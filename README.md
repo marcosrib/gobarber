@@ -24,6 +24,7 @@ Neste projeto foi desenvolvido o backend da aplicação, onde irá integrar o fr
 - express.
 - pg.
 - typeorm.
+- bcryptjs
 ## :floppy_disk: Banco de dados: 
 - postgres.
 
