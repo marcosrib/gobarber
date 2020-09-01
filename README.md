@@ -24,7 +24,9 @@ Neste projeto foi desenvolvido o backend da aplicação, onde irá integrar o fr
 - express.
 - pg.
 - typeorm.
-- bcryptjs
+- bcryptjs.
+- jsonwebtoken.
+- multer.
 ## :floppy_disk: Banco de dados: 
 - postgres.
 
