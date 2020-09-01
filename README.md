@@ -16,9 +16,11 @@ Neste projeto foi desenvolvido o backend da aplicação, onde irá integrar o fr
 
 ## :gear: Funcionalidades:
 
-- [X] Realizar o agendamento. Nesta api receberá o seguintes dados:
-  - [X]  Fornecedor.
-  - [x] Horário. 
+- [X] Realizar agendamento.
+- [X] Listar agendamentos.
+- [X] Realizar autenticaçao com token jwt.
+- [X] Cadastramento de usuários.
+- [X] Cadastrar e atulizar o avatar.
 ## :file_folder: Bibliotecas utilizadas: 
 - date-fns.
 - express.
@@ -27,6 +29,7 @@ Neste projeto foi desenvolvido o backend da aplicação, onde irá integrar o fr
 - bcryptjs.
 - jsonwebtoken.
 - multer.
+- express-async-errors.
 ## :floppy_disk: Banco de dados: 
 - postgres.
 
