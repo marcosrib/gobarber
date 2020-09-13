@@ -1,12 +1,12 @@
 # Gobarber
 
 ## :page_with_curl: Ídice: 
-  - [Descriçao do projeto:](#memo-descriçao-do-projeto)
+  - [Descrição do projeto:](#memo-descrição-do-projeto)
   - [Funcionalidades:](#gear-funcionalidades)
   - [Bibliotecas utilizadas:](#file_folder-bibliotecas-utilizadas)
 -  [Banco de dados:](#floppy_disk-banco-de-dados)
 
-## :memo:   Descriçao do projeto:
+## :memo: Descrição do projeto:
 
 Este é um projeto desenvolvido no bootcamp GoStack da Rockseat utilizando Node.js.
 
