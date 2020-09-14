@@ -32,7 +32,7 @@ Neste projeto foi desenvolvido o backend da aplicação, onde irá integrar o fr
 - multer.
 - express-async-errors.
 ## :floppy_disk: Banco de dados: 
-- postgres.
+- postgreSQL.
 ## :arrow_forward: Como executar:
 No terminal clone o projeto.
 ```
