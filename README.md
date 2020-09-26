@@ -1,12 +1,13 @@
 # Gobarber
 
 ## :page_with_curl: Ídice: 
-  - [Descriçao do projeto:](#memo-descriçao-do-projeto)
+  - [Descrição do projeto:](#memo-descrição-do-projeto)
   - [Funcionalidades:](#gear-funcionalidades)
   - [Bibliotecas utilizadas:](#file_folder-bibliotecas-utilizadas)
--  [Banco de dados:](#floppy_disk-banco-de-dados)
+  -  [Banco de dados:](#floppy_disk-banco-de-dados)
+  - [Como executar:](#arrow_forward-como-executar)
 
-## :memo:   Descriçao do projeto:
+## :memo: Descrição do projeto:
 
 Este é um projeto desenvolvido no bootcamp GoStack da Rockseat utilizando Node.js.
 
@@ -31,5 +32,19 @@ Neste projeto foi desenvolvido o backend da aplicação, onde irá integrar o fr
 - multer.
 - express-async-errors.
 ## :floppy_disk: Banco de dados: 
-- postgres.
+- postgreSQL.
+## :arrow_forward: Como executar:
+No terminal clone o projeto.
+```
+git clone https://github.com/marcosrib/gobarber-backend.git
+```
+Entre na pasta do projeto e instale as dependências executando.
+```
+yarn ou npm install
+```
+Para rodar o projeto execute.
+
+```
+yarn dev:server
+```
 
