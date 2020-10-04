@@ -20,9 +20,8 @@ interface Response {
 class AuthenticateUSerService {
   public async execute({ email, password }: Request): Promise<Response> {
     const usersRepository = getRepository(User);
-    console.log(usersRepository);
+
     const user = await usersRepository.findOne({ where: { email } });
-    console.log(user);
 
     if (!user) throw new AppError('Incorrect email/password conbination.', 401);
 
