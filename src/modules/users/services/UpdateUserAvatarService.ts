@@ -1,7 +1,6 @@
-import path from 'path';
-import fs from 'fs';
+import 'reflect-metadata';
 import { inject, injectable } from 'tsyringe';
-import uploadConfig from '@config/upload';
+
 import AppError from '@shared/errors/AppError';
 import IStorageProvider from '@shared/container/providers/StorageProvider/models/IStorageProvider';
 import IUsersRepository from '../repositories/IUsersRepository';
@@ -28,7 +27,7 @@ class UpdateUserAvatarService {
       throw new AppError('Only authenticated users can change avatar', 401);
 
     if (user.avatar) {
-      await this.storgeProvider.deletFile(user.avatar);
+      await this.storgeProvider.deleteFile(user.avatar);
     }
 
     const filename = await this.storgeProvider.saveFile(avatarFilename);
