@@ -4,7 +4,7 @@ import AppError from '@shared/errors/AppError';
 import IUsersRepository from '../repositories/IUsersRepository';
 import IUserTokensRopository from '../repositories/IUserTokensRopository';
 import IHashProvider from '../providers/hashProvider/models/IHashProvider';
-// import User from '../infra/typeorm/entities/User';
+
 interface IRequest {
   password: string;
   token: string;
