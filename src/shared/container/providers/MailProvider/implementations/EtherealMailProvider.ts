@@ -1,15 +1,22 @@
 import nodemailer, { Transporter } from 'nodemailer';
+import { injectable, inject } from 'tsyringe';
+import IMailTemplateProvider from '@shared/container/providers/MailTemplateProvider/models/IMailTemplateProvider';
+
 import IMailProvider from '../models/IMailProvider';
+import ISendMailDTO from '../dtos/ISendMailDTO';
 
 interface IMessage {
   to: string;
   body: string;
 }
-
+@injectable()
 export default class FakeMailProvider implements IMailProvider {
   private client: Transporter;
 
-  constructor() {
+  constructor(
+    @inject('MailTemplateProvider')
+    private mailTemplateProvider: IMailTemplateProvider,
+  ) {
     nodemailer.createTestAccount().then(account => {
       const transporter = nodemailer.createTransport({
         host: account.smtp.host,
@@ -24,12 +31,23 @@ export default class FakeMailProvider implements IMailProvider {
     });
   }
 
-  public async sendMail(to: string, body: string): Promise<void> {
+  public async sendMail({
+    to,
+    from,
+    subject,
+    templateData,
+  }: ISendMailDTO): Promise<void> {
     const message = await this.client.sendMail({
-      from: 'Equipe GoBarber <marcos.rib.sousa@gmail.com>', // sender address
-      to, // list of receivers
-      subject: 'Hello ✔', // Subject line
-      text: body, // plain text body
+      from: {
+        name: from?.name || 'Equipe GoBarber',
+        address: from?.email || 'marcos.rib.sousa@gmail.com',
+      }, // sender address
+      to: {
+        name: to.name,
+        address: to.email,
+      },
+      subject, // Subject line
+      html: await this.mailTemplateProvider.parse(templateData), // plain text body
     });
 
     console.log('Message sent: %s', message.messageId);
