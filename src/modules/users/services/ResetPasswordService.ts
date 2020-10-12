@@ -31,7 +31,7 @@ class ResetPasswordService {
     }
 
     const user = await this.usersRepository.findById(userToken.user_id);
-
+    console.log(user);
     if (!user) {
       throw new AppError('User does not exits');
     }

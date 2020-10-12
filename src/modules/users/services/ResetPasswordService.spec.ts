@@ -42,13 +42,9 @@ describe('ResetPassword', () => {
   });
 
   it('should not be able to reset the password with non-existing token', async () => {
-    const { token } = await fakeUserTokensRepository.generate(
-      'non-existing-user',
-    );
-
     await expect(
       resetPasswordService.execute({
-        token,
+        token: 'kmkmkmkmk',
         password: '123456',
       }),
     ).rejects.toBeInstanceOf(AppError);
@@ -68,6 +64,17 @@ describe('ResetPassword', () => {
 
       return custamDate.setHours(custamDate.getHours() + 3);
     });
+    await expect(
+      resetPasswordService.execute({
+        token,
+        password: '123456',
+      }),
+    ).rejects.toBeInstanceOf(AppError);
+  });
+
+  it('should not be able non-existing user', async () => {
+    const { token } = await fakeUserTokensRepository.generate('non-exist-user');
+
     await expect(
       resetPasswordService.execute({
         token,
