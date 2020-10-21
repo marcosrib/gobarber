@@ -1,5 +1,5 @@
 import AppError from '@shared/errors/AppError';
-import { createTrue } from 'typescript';
+
 import ListProviderMonthAvailabilityService from './ListProviderMonthAvailabilityService';
 import FakeAppointmentsRepository from '../repositories/fakes/FakeAppointmentsRepository';
 

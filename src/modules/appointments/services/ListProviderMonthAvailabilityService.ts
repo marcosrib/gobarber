@@ -2,8 +2,8 @@ import 'reflect-metadata';
 import { inject, injectable } from 'tsyringe';
 
 import IAppointmentsRepository from '@modules/appointments/repositories/IAppointmentsRepository';
-import User from '@modules/users/infra/typeorm/entities/User';
-import { getDate, getDaysInMonth, areIntervalsOverlapping } from 'date-fns';
+
+import { getDate, getDaysInMonth } from 'date-fns';
 
 interface Request {
   provider_id: string;
