@@ -22,7 +22,7 @@ profileRouter.put(
       password_confirmation: Joi.string().required().valid(Joi.ref('password')),
     },
   }),
-  profileController.create,
+  profileController.update,
 );
 
 profileRouter.get('/', profileController.show);
