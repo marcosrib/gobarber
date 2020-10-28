@@ -26,6 +26,7 @@ class ListProviderService {
       users = await this.usersRepository.findAllProviders({
         except_user_id: user_id,
       });
+      console.log('nnnnnn');
 
       await this.cacheProvider.save(`providers-list:${user_id}`, users);
     }
