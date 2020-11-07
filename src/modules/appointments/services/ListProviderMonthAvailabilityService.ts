@@ -3,8 +3,7 @@ import { inject, injectable } from 'tsyringe';
 
 import IAppointmentsRepository from '@modules/appointments/repositories/IAppointmentsRepository';
 
-import { getDate, getDaysInMonth, isAfter, da } from 'date-fns';
-import { date } from '@hapi/joi';
+import { getDate, getDaysInMonth, isAfter } from 'date-fns';
 
 interface Request {
   provider_id: string;
@@ -19,7 +18,7 @@ type IResponse = Array<{
 @injectable()
 class ListProviderMonthAvailabilityService {
   constructor(
-    @inject('AppointmentsRepository')
+    @inject('AppointmentRepository')
     private appointmentsRepository: IAppointmentsRepository,
   ) {}
 
@@ -35,6 +34,9 @@ class ListProviderMonthAvailabilityService {
         month,
       },
     );
+
+    console.log(appointments);
+
     const numberOfDaysInMonth = getDaysInMonth(new Date(year, month - 1));
     const eachDayArray = Array.from(
       { length: numberOfDaysInMonth },
