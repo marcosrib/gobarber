@@ -30,6 +30,8 @@ class UpdateProfileService {
     password,
     old_password,
   }: Request): Promise<User> {
+    console.log('mkmkmkm');
+
     const user = await this.usersRepository.findById(user_id);
     if (!user) {
       throw new AppError('User not found.');
