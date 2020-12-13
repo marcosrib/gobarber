@@ -28,7 +28,8 @@ Neste projeto foi desenvolvido as apis da aplicação, onde irá integrar o fron
 - [X] Listar agendamentos.
 - [X] Realizar autenticaçao com token jwt.
 - [X] Cadastrar usuário.
-- [X] Atualizar o avatar.
+- [X] Atualizar avatar.
+- [X] Atualizar perfil.
 - [X] Adicionar cache na api que lista os agendamentos com banco de dados redis.
 ## :file_folder: Bibliotecas utilizadas: 
 - date-fns.
