@@ -35,10 +35,23 @@ Neste projeto foi desenvolvido as apis da aplicação, onde irá integrar o fron
 - date-fns.
 - express.
 - pg.
+- cors.
+- aws-sdk.
+- celebrate.
+- class-transformer.
 - typeorm.
 - bcryptjs.
+- dotenv.
 - jsonwebtoken.
 - multer.
+- handlebars.
+- ioredis.
+- nodemailer.
+- rate-limiter-flexible.
+- redis.
+- uuidv4.
+- tsyringe.
+- reflect-metadata.
 - express-async-errors.
 ## :floppy_disk: Banco de dados: 
 - postgreSQL.
