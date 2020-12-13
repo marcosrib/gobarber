@@ -25,7 +25,7 @@ Neste projeto foi desenvolvido as apis da aplicação, onde irá integrar o fron
 ## :gear: Funcionalidades:
 
 - [X] Realizar agendamento.
-- [X] Listar agendamentos.
+- [X] Listar os agendamentos.
 - [X] Realizar autenticaçao com token jwt.
 - [X] Cadastrar usuário.
 - [X] Atualizar avatar.
