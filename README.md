@@ -9,10 +9,16 @@
 
 ## :memo: Descrição do projeto:
 
-Este é um projeto desenvolvido no bootcamp GoStack da Rockseat utilizando Node.js.
-
-Este projeto tem como propósito agendar horários nas barbearias.
+Projeto desenvolvido no bootcamp GoStack da Rockseat utilizando Node.js.
 Neste projeto foi desenvolvido o backend da aplicação, onde irá integrar o frontend tanto web como mobile com as regras de negócio e o banco de dados.
+
+ Propósito de criação:
+ 
+- Visualização de agendamentos dos clientes.
+- Agendamento de horário.
+- Cadastro de clientes e prestadores de serviços (Barbearias).
+- Edição de Perfil.
+
 
 
 ## :gear: Funcionalidades:
