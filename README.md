@@ -10,6 +10,7 @@
 ## :memo: Descrição do projeto:
 
 Projeto desenvolvido no bootcamp GoStack da Rockseat utilizando Node.js.
+
 Neste projeto foi desenvolvido o backend da aplicação, onde irá integrar o frontend tanto web como mobile com as regras de negócio e o banco de dados.
 
  Propósito de criação:
