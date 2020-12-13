@@ -15,10 +15,10 @@ Neste projeto foi desenvolvido as apis da aplicação, onde irá integrar o fron
 
  Propósito de criação:
  
-- Visualização de agendamento dos clientes.
-- Agendamento de horário.
-- Cadastro de clientes e prestadores de serviços (Barbearias).
-- Edição de Perfil.
+- Api visualização de agendamento dos clientes.
+- Api agendamento de horário.
+- Api cadastro de clientes e prestadores de serviços (Barbearias).
+- Api edição de Perfil.
 
 
 
@@ -27,9 +27,9 @@ Neste projeto foi desenvolvido as apis da aplicação, onde irá integrar o fron
 - [X] Realizar agendamento.
 - [X] Listar agendamentos.
 - [X] Realizar autenticaçao com token jwt.
-- [X] Cadastramento de usuários.
-- [X] Cadastrar e atulizar o avatar.
-- [X] Adicionar cache na api lista agendamento com banco de dados redis.
+- [X] Cadastrar usuário.
+- [X] Atualizar o avatar.
+- [X] Adicionar cache na api que lista os agendamentos com banco de dados redis.
 ## :file_folder: Bibliotecas utilizadas: 
 - date-fns.
 - express.
