@@ -11,11 +11,11 @@
 
 Projeto desenvolvido no bootcamp GoStack da Rockseat utilizando Node.js.
 
-Neste projeto foi desenvolvido o backend da aplicação, onde irá integrar o frontend tanto web como mobile com as regras de negócio e o banco de dados.
+Neste projeto foi desenvolvido as apis da aplicação, onde irá integrar o frontend tanto web como mobile;.
 
  Propósito de criação:
  
-- Visualização de agendamentos dos clientes.
+- Visualização de agendamento dos clientes.
 - Agendamento de horário.
 - Cadastro de clientes e prestadores de serviços (Barbearias).
 - Edição de Perfil.
