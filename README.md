@@ -22,6 +22,7 @@ Neste projeto foi desenvolvido o backend da aplicação, onde irá integrar o fr
 - [X] Realizar autenticaçao com token jwt.
 - [X] Cadastramento de usuários.
 - [X] Cadastrar e atulizar o avatar.
+- [X] Adicionar cache na api lista agendamento com banco de dados redis.
 ## :file_folder: Bibliotecas utilizadas: 
 - date-fns.
 - express.
@@ -33,6 +34,7 @@ Neste projeto foi desenvolvido o backend da aplicação, onde irá integrar o fr
 - express-async-errors.
 ## :floppy_disk: Banco de dados: 
 - postgreSQL.
+- redis
 ## :arrow_forward: Como executar:
 No terminal clone o projeto.
 ```
